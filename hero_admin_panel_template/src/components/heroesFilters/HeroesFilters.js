@@ -74,7 +74,7 @@ const Btn = ({ name, onFilter, activeFilter }) => {
     <button
       onClick={onFilter}
       className={classNames(`btn btn-${setClassName(name)}`, {
-        active: activeFilter,
+        active: activeFilter === name,
       })}
     >
       {name}
